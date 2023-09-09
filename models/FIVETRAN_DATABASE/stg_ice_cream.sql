@@ -7,10 +7,10 @@ with
             product,
             time,
             date,
+            FAVORITE_FLAVOR,
             trim(split_part(location, ' ', -1)) as city
 
         from fivetran_database.ice_cream_data.ice_cream_data_sheet
     )
 
-select *
-from ice_cream_data
+select * from ice_cream_data

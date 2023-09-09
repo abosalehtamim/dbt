@@ -15,7 +15,8 @@ with
             ice_cream_data.quantity_kg,
             ice_cream_data.product,
             ice_cream_data.time,
-            ice_cream_data.date
+            ice_cream_data.FAVORITE_FLAVOR
+
 
         from weather_data
 
