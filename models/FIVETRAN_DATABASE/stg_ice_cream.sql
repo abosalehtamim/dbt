@@ -14,3 +14,5 @@ with
     )
 
 select * from ice_cream_data
+
+
