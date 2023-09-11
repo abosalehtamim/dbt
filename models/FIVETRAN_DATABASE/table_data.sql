@@ -6,10 +6,10 @@ with
     final as (
 
         select
-            weather_data.city,
-            weather_data.avg_temperature,
-            weather_data.min_temperature,
-            weather_data.max_temperature,
+            weather_data.City,
+            weather_data.AVG_TEMPERATURE,
+            weather_data.MINIMUM_TEMPERATURE,
+            weather_data.MAXIMUM_TEMPERATURE,
             weather_data.sun_hours,
             ice_cream_data.sales,
             ice_cream_data.quantity_kg,
