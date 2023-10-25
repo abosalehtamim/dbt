@@ -2,7 +2,7 @@ with
     ICE_CREAM_DATA as (
 
         select
-            "Sales €" as sales,
+            cast(REPLACE("Sales €", ',', '.') as decimal) as sales,
             cast(REPLACE("Quantity gal", ',', '.') as decimal) * 3.78 AS quantity_kg,
             PRODUCT,
             TIME,
