@@ -3,7 +3,7 @@ with
 
         select
             "Sales €" as sales,
-            ("Quantity gal" * 3.78) as quantity_kg,
+            cast(REPLACE("Quantity gal", ',', '.') as decimal) * 3.78 AS quantity_kg,
             PRODUCT,
             TIME,
             DATE,
