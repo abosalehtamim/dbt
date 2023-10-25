@@ -10,9 +10,7 @@ with
             FAVORITE_FLAVOR,
             trim(split_part(location, ' ', -1)) as city
 
-        from fivetran_database.ice_cream_data.ice_cream_data_sheet
+        from SANDBOX_TAMIMABOSALEH.FIVETRAN_PARTNER.ICE_CREAM_DATA
     )
 
 select * from ice_cream_data
-
-
