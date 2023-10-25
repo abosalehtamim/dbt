@@ -1,5 +1,5 @@
 with
-    ice_cream_data as (
+    ICE_CREAM_DATA as (
 
         select
             sales_ as sales,
@@ -13,4 +13,4 @@ with
         from SANDBOX_TAMIMABOSALEH.FIVETRAN_PARTNER.ICE_CREAM_DATA
     )
 
-select * from ice_cream_data
+select * from ICE_CREAM_DATA

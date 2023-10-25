@@ -1,27 +1,27 @@
 with
-    weather_data as (select * from {{ ref("stg_temperature") }}),
+    WEATHER_DATA as (select * from {{ ref("stg_temperature") }}),
 
-    ice_cream_data as (select * from {{ ref("stg_ice_cream") }}),
+    ICE_CREAM_DATA as (select * from {{ ref("stg_ice_cream") }}),
 
     final as (
 
         select
-            weather_data.City,
-            weather_data.AVG_TEMPERATURE,
-            weather_data.MINIMUM_TEMPERATURE,
-            weather_data.MAXIMUM_TEMPERATURE,
-            weather_data.sun_hours,
-            ice_cream_data.sales,
-            ice_cream_data.quantity_kg,
-            ice_cream_data.product,
-            ice_cream_data.time,
-            ice_cream_data.date,
-            ice_cream_data.FAVORITE_FLAVOR
+            WEATHER_DATA.City,
+            WEATHER_DATA.AVG_TEMPERATURE,
+            WEATHER_DATA.MINIMUM_TEMPERATURE,
+            WEATHER_DATA.MAXIMUM_TEMPERATURE,
+            WEATHER_DATA.sun_hours,
+            ICE_CREAM_DATA.sales,
+            ICE_CREAM_DATA.quantity_kg,
+            ICE_CREAM_DATA.product,
+            ICE_CREAM_DATA.time,
+            ICE_CREAM_DATA.date,
+            ICE_CREAM_DATA.FAVORITE_FLAVOR
 
 
-        from weather_data
+        from WEATHER_DATA
 
-        inner join ice_cream_data using (date, city)
+        inner join ICE_CREAM_DATA using (date, city)
 
     )
 
