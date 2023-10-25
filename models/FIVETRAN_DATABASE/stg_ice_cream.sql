@@ -2,13 +2,13 @@ with
     ICE_CREAM_DATA as (
 
         select
-            sales_ as sales,
-            (quantity_gal * 3.78) as quantity_kg,
-            product,
-            time,
-            date,
-            FAVORITE_FLAVOR,
-            trim(split_part(location, ' ', -1)) as city
+            "Sales €" as sales,
+            ("Quantity gal" * 3.78) as quantity_kg,
+            PRODUCT,
+            TIME,
+            DATE,
+            "Favorite Flavor",
+            trim(split_part(LOCATION, ' ', -1)) as city
 
         from SANDBOX_TAMIMABOSALEH.FIVETRAN_PARTNER.ICE_CREAM_DATA
     )

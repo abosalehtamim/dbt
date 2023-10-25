@@ -16,7 +16,7 @@ with
             ICE_CREAM_DATA.product,
             ICE_CREAM_DATA.time,
             ICE_CREAM_DATA.date,
-            ICE_CREAM_DATA.FAVORITE_FLAVOR
+            ICE_CREAM_DATA."Favorite Flavor"
 
 
         from WEATHER_DATA
@@ -26,3 +26,4 @@ with
     )
 
 select * from final
+
